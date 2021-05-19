@@ -10,4 +10,9 @@ class Kunjungan extends Model
     use HasFactory;
 
     protected $guarded = [];
+
+    public function checkins()
+    {
+        return $this->hasMany(Checkin::class);
+    }
 }

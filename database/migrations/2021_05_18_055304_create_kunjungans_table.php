@@ -19,6 +19,8 @@ class CreateKunjungansTable extends Migration
             $table->string('email');
             $table->string('noIdentitas');
             $table->string('noHp');
+            $table->boolean('checkin')->default(0);
+            $table->boolean('checkout')->default(0);
             $table->timestamps();
         });
     }

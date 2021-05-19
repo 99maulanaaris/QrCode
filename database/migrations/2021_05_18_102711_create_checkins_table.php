@@ -16,7 +16,7 @@ class CreateCheckinsTable extends Migration
         Schema::create('checkins', function (Blueprint $table) {
             $table->id();
             $table->foreignId('kunjungan_id');
-            $table->date('waktuCheckin');
+            $table->time('waktuCheckin');
             $table->timestamps();
         });
     }

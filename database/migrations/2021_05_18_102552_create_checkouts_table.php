@@ -16,7 +16,7 @@ class CreateCheckoutsTable extends Migration
         Schema::create('checkouts', function (Blueprint $table) {
             $table->id();
             $table->foreignId('kunjungan_id');
-            $table->date('waktuCheckout');
+            $table->time('waktuCheckout');
             $table->timestamps();
         });
     }

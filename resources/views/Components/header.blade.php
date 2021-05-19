@@ -6,8 +6,8 @@
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,7 +46,7 @@
                             </div>
                             <div class="user-img d-flex align-items-center">
                                 <div class="avatar avatar-md">
-                                    <img src="assets/images/faces/1.jpg">
+                                    <img src="/assets/images/faces/1.jpg">
                                 </div>
                             </div>
                         </div>
@@ -64,8 +64,8 @@
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#"><i
-                                    class="icon-mid bi bi-box-arrow-left me-2"></i> Logout</a></li>
+                        <li><a class="dropdown-item" href="#"><i class="icon-mid bi bi-box-arrow-left me-2"></i>
+                                Logout</a></li>
                     </ul>
                 </div>
             </div>

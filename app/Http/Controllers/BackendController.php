@@ -15,27 +15,20 @@ class BackendController extends Controller
         return view('Home.backend', compact('title'));
     }
 
-    public function checkin()
+
+    public function getVisitor()
     {
-        $title = "Checkin QrCode";
-
-
-        return view('Checkin.index', compact('title'));
+        $visitors = Kunjungan::all();
+        $title = "Data Pengunjung";
+        return view('Home.visitor', compact('visitors', 'title'));
     }
 
-    public function getCheckin(Request $request)
+    public function checkin()
     {
-        $today = Carbon::now();
-        $data = Kunjungan::where('noIdentitas', 'like', "%" . $request->cari . "%")->get();
-
-        foreach ($data as $d) {
-            $file = [
-                'kunjungan_id' => $d->id,
-                'waktuCheckin' => $today
-            ];
-
-            dd($file);
-        }
+        $title = "Checkin";
+        $checkins = Checkin::all();
+        $tanggal = Carbon::now();
+        return view('Home.checkin', compact('title', 'checkins', 'tanggal'));
     }
 
     public function checkout()
